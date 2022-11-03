@@ -12,6 +12,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://spdx/spdx-sbom-generator'
-  entrypoint: 'entrypoint.sh'
+  entrypoint: './entrypoint.sh'
     
     
