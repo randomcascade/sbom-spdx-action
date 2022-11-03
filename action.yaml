@@ -6,9 +6,9 @@ inputs:
     required: false
     default: "."
    output-path:
-    description: 'Output for the sbom to be placed'
-    required: false
-    default: "."
+     description: 'Output for the sbom to be placed'
+     required: false
+     default: "."
 runs:
   using: 'docker'
   image: 'docker://spdx/spdx-sbom-generator'
