@@ -10,5 +10,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Generate SBOM
-        uses: randomcascade/sbom-spdx-action@latest
+        uses: randomcascade/sbom-spdx-action@main
         
