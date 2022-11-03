@@ -1,2 +1,2 @@
 #!/bin/sh
-./spdx-sbom-generator -p $1 -o $2
+/spdx-sbom-generator -p $1 -o $2
