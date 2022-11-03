@@ -1,0 +1,17 @@
+name: sbom-spdx-action
+description: 'Generates spdx output for given repo'
+inputs:
+  source-path:
+    description: 'Source code of repo to be inventoried'
+    required: false
+    default: "."
+   output-path:
+    description: 'Output for the sbom to be placed'
+    required: false
+    default: "."
+runs:
+  using: 'docker'
+  image: 'docker://spdx/spdx-sbom-generator'
+  entrypoint: 'entrypoint.sh'
+    
+    
