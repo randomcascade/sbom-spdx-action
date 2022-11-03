@@ -11,7 +11,7 @@ inputs:
     default: "."
 runs:
   using: 'docker'
-  image: 'docker://spdx/spdx-sbom-generator'
+  image: 'Dockerfile'
   entrypoint: './entrypoint.sh'
     
     
