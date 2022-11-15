@@ -9,6 +9,18 @@ inputs:
     description: 'Output for the sbom to be placed'
     required: false
     default: "."
+  include-license-text:
+    description: 'Include all license text defaults to false'
+    required: false
+    default: "false"
+  schema:
+    description: 'Schema version defaults to the default of the spdx-sbom-generator'
+    required: false
+    default: "2.2"
+  format:
+    description: 'The output format of the SBOM file defaults to spdx. spdx or JSON'
+    required: false
+    default: "spdx"
 runs:
   using: 'docker'
   image: 'Dockerfile'
